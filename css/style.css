@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: "figtree";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    border: 2px solid hsl(0, 0%, 7%);
+}
+
+@media (max-width: 767px) {
+    main {
+        width: 357px;
+    }
+
+    main::before {
+        max-width: 360px;
+    }
+
+    main>img {
+        max-width: 100%;
+    }
+}
+
+main::before {
+    position: absolute;
+    content: "";
+    left: 11px;
+    top: 11px;
+    width: 400px;
+    height: 100%;
+    background-color: hsl(0, 0%, 7%);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+main>img {
+    border-radius: 15px;
+}
+
+main .learn {
+    display: block;
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+main .date {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+main h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main h2:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+main p {
+    color: hsl(0, 0%, 42%);
+    max-width: 335px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+main .user {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 7%);
+    margin-top: 30px;
+}
+
+main .user img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
